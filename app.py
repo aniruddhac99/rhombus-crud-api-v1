@@ -1,3 +1,6 @@
+# Load Test: Verify the endpoints from VM using port-forwarding and curl
+# Load Test: Verified the endpoint /home in CMD using cURL
+
 from flask import Flask, request, jsonify
 from prometheus_client import Counter, generate_latest
 import os
@@ -64,3 +67,6 @@ def metrics():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
+
+
