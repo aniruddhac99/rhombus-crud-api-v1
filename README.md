@@ -149,9 +149,9 @@ kubectl delete svc crud-api`
 
 ----------
 
-## Issues Faced: 
+## ⚠️ Issues Faced: 
 
-default kubectl config view: Initially set to null, used $PATH / config values. 
+- # default kubectl config view: Initially set to null, used $PATH / config values. 
 
 ## 🧷 Notes
 
