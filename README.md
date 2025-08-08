@@ -151,6 +151,8 @@ kubectl delete svc crud-api`
 
 ## ⚠️ Issues Faced: 
 
+- Docker Runtime had to be re-started, re-initialized /env/ values
+
 - default kubectl config view: Initially set to null, used $PATH / config values. 
 
 - Git RPC Failure HTTPS 400 Status Code:  fixed by raising the postBuffer size by: git config --global http.postBuffer 524288000.
