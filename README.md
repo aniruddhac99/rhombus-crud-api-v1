@@ -1,4 +1,4 @@
-# 🚀 crud-api-v2
+# 🚀 rhombus-crud-api-v1
 
 > A minimal, secure, and fully portable CRUD API for **DevSecOps demos** — built with Flask, deployed via Docker & k3s (Multipass VM).  
 > Features in-memory storage, Prometheus metrics, health probes, and a one-command CI/CD deployment script.
@@ -148,6 +148,10 @@ To delete the app:
 kubectl delete svc crud-api` 
 
 ----------
+
+## Issues Faced: 
+
+default kubectl config view: Initially set to null, used $PATH / config values. 
 
 ## 🧷 Notes
 
