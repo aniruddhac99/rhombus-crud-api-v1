@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crud-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crud-api
+  template:
+    metadata:
+      labels:
+        app: crud-api
+    spec:
+      containers:
+      - name: app
+        image: crud-api:local
+        imagePullPolicy: IfNotPresent
+
+        env:
+        - name: API_KEY
+          value: "demo123"
+        ports:
+        - containerPort: 5000
