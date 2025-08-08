@@ -155,6 +155,11 @@ kubectl delete svc crud-api`
 
 - Git RPC Failure HTTPS 400 Status Code:  fixed by raising the postBuffer size by: git config --global http.postBuffer 524288000.
 
+- port-forwarding 8080: Find the process ID (PID): sudo lsof -i :portNumber.
+Kill the process: kill PID.
+
+(Note): NodePort is a more permanent solution compared to port-forward, especially in a containerized context.
+
 ## 🧷 Notes
 
 -   This is stateless. Data is stored in RAM and lost on container restart.
